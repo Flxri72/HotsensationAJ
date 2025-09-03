@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 HotsensationAJ 🔥</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Icon.png" type="image/png">
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="Icon.png" alt="Icono" class="loading-icon">
+        <h2 class="cursive">HotsensationAJ</h2>
+    </div>
+    <div class="container">
+        <img src="Icon-removebg-preview.png" alt="Icono Principal" class="main-icon">
+        <h1 class="cursive title-effect">🔥 HotsensationAJ 🔥</h1>
+        <div class="info">
+            <p id="puntos-andrea">Andrea: 0 puntos</p>
+            <p id="puntos-juan">Juan: 0 puntos</p>
+            <p id="nivel">Nivel: 🌡️ Tibio</p>
+        </div>
+        <div class="reto-container">
+            <p id="reto">¡Presiona "Nuevo Reto" para comenzar!</p>
+        </div>
+        <div class="botones">
+            <button id="nuevo-reto">🎲 Nuevo Reto</button>
+            <button id="completado" disabled>✅ Completado</button>
+            <button id="saltar" disabled>⏭️ Saltar</button>
+            <button id="terminar-juego">🏁 Terminar Juego</button>
+        </div>
+        <div class="niveles">
+            <button class="nivel-btn" data-nivel="1">🌡️ Tibio</button>
+            <button class="nivel-btn" data-nivel="2">🔥 Caliente</button>
+            <button class="nivel-btn" data-nivel="3">🌋 Ardiente</button>
+            <button class="nivel-btn" data-nivel="4">🌋💥 Volcánico</button>
+        </div>
+        <div class="video-container">
+            <video id="video-preview" autoplay muted></video>
+            <button id="start-recording" disabled>🎥 Comenzar Grabación</button>
+        </div>
+        <div id="app-name" class="cursive">HotsensationAJ</div>
+    </div>
+    <script>
+        window.addEventListener("load", () => {
+            document.getElementById("loading-screen").style.display = "none";
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
